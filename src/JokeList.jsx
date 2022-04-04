@@ -40,22 +40,25 @@ export class JokeList extends Component {
   }
   render() {
     return (
-      <div className="JokeList">
-        <div className="JokeList-sidebar">
-          <h1 className="JokeList-title"><span>The</span> Jokes</h1>
-          <img src="https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg" />
-          <button className="JokeList-getmore">Get More Jokes</button>
-        </div>
+      <div className="JokeList-dashboard">
+        <h1>Jokes Ranker Dashboard</h1>
+        <div className="JokeList">
+          <div className="JokeList-sidebar">
+            <h1 className="JokeList-title"><span>The</span> Jokes</h1>
+            <img src="https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg" />
+            <button className="JokeList-getmore">Get More Jokes</button>
+          </div>
 
-        <div className="JokeList-jokes">
-          {
-            this.state.jokes.map(joke => (
-              <Joke 
-              upvote={() => this.handleVote(joke.id, 1)} 
-              downvote={() => this.handleVote(joke.id, -1)}
-              key={joke.id} text={joke.text} votes={joke.votes}/>
-            ))
-          }
+          <div className="JokeList-jokes">
+            {
+              this.state.jokes.map(joke => (
+                <Joke 
+                upvote={() => this.handleVote(joke.id, 1)} 
+                downvote={() => this.handleVote(joke.id, -1)}
+                key={joke.id} text={joke.text} votes={joke.votes}/>
+                ))
+              }
+          </div>
         </div>
       </div>
     )

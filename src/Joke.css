@@ -11,5 +11,35 @@
   justify-content: center;
   margin-right: 1.2rem;
   align-items: center;
-  width: 12%;
+  width: 25%;
+}
+
+.Joke-text {
+  width: 75%;
+  font-size: 0.9rem;
+}
+
+.Joke-votes {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  border: 3px solid green;
+  text-align: center;
+  box-shadow: 0 10px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+}
+
+.fa-arrow-up, .fa-arrow-down {
+  font-size: 1.5em;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.Joke-emoji {
+  font-size: 2rem;
+  margin-left: auto;
+  border-radius: 50%;
+  
+
+
 }
